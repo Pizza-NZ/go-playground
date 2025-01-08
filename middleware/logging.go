@@ -22,7 +22,7 @@ func NewLogger() MyLogger {
 		return strings.ToUpper(fmt.Sprintf("| %-6s|", i))
 	}
 	output.FormatFieldName = func(i interface{}) string {
-		return fmt.Sprintf("%s:", i)
+		return fmt.Sprintf("%s: ", i)
 	}
 	output.FormatFieldValue = func(i interface{}) string {
 		return fmt.Sprintf("%s", i)
